@@ -219,6 +219,13 @@ src/
 * O arquivo `.env` não está incluído por segurança
 * O banco SQLite é criado automaticamente
 * O projeto utiliza porta dinâmica no deploy
+* 
+---
+
+## 🌍 Deploy
+
+API disponível em:
+https://api-completa-bjzj.onrender.com
 
 ---
 
