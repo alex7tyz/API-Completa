@@ -1,0 +1,354 @@
+{
+  "info": {
+    "_postman_id": "1665ab7a-dec5-4fc5-88fb-814a64109e09",
+    "name": "Api-Final",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52640322",
+    "_collection_link": "https://go.postman.co/collection/52640322-1665ab7a-dec5-4fc5-88fb-814a64109e09?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Registro",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"alex@email.com\",\r\n  \"password\": \"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-completa-bjzj.onrender.com/register",
+          "protocol": "https",
+          "host": [
+            "api-completa-bjzj",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"alex@email.com\",\r\n  \"password\": \"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-completa-bjzj.onrender.com/login",
+          "protocol": "https",
+          "host": [
+            "api-completa-bjzj",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Tasks",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2Mzg2MDQwfQ.jLPtMKlhx30rHVphdrdsJUv0lfojoUO4vunWUIPCnx0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Tasks",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2Mzg1ODA4fQ.wtA12pX3ECaA-W-x9Nzz-CIRkm7yk6vFCLtf7uokrvs",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Estudar Node\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Task/1",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2Mzg1ODA4fQ.wtA12pX3ECaA-W-x9Nzz-CIRkm7yk6vFCLtf7uokrvs",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Atualizando tarefa\",\r\n  \"completed\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-completa-bjzj.onrender.com/tasks/1",
+          "protocol": "https",
+          "host": [
+            "api-completa-bjzj",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "tasks",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Task/1",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2Mzg1ODA4fQ.wtA12pX3ECaA-W-x9Nzz-CIRkm7yk6vFCLtf7uokrvs",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/tasks/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "tasks",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TesteJoin",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "TestePaginação",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2Mzg1ODA4fQ.wtA12pX3ECaA-W-x9Nzz-CIRkm7yk6vFCLtf7uokrvs",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api-completa-bjzj.onrender.com/tasks?page=1&limit=2",
+          "protocol": "https",
+          "host": [
+            "api-completa-bjzj",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "tasks"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "2"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TesteFiltro",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2Mzg2MDQwfQ.jLPtMKlhx30rHVphdrdsJUv0lfojoUO4vunWUIPCnx0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api-completa-bjzj.onrender.com/tasks?completed=1",
+          "protocol": "https",
+          "host": [
+            "api-completa-bjzj",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "tasks"
+          ],
+          "query": [
+            {
+              "key": "completed",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TesteOrdenação",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "TesteCompleto",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2Mzg2MDQwfQ.jLPtMKlhx30rHVphdrdsJUv0lfojoUO4vunWUIPCnx0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api-completa-bjzj.onrender.com/tasks?page=1&limit=5&completed=0&order=asc",
+          "protocol": "https",
+          "host": [
+            "api-completa-bjzj",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "tasks"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "5"
+            },
+            {
+              "key": "completed",
+              "value": "0"
+            },
+            {
+              "key": "order",
+              "value": "asc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deploy",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
